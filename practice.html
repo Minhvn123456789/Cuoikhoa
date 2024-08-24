@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+    <div id="nav2">
+        <ul class="nav2">
+            <li> 154 Cửa hàng khắp cả nước</li>
+            <li>Đặt hàng: 1800.6936</li>
+        </ul>
+    </div>
+    <div>
+        <div id="nav">
+            <ul class="nav" style="border-bottom: 1px black solid;">
+                <li class="hover" style="overflow: hidden;"> <a href="practice.html"><img class="nav3"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVRYrEaILChYnNHTn_TeXBAl8w-JmXBfXmZw&usqp=CAU"
+                            alt=""></a></li>
+                <li class="hover"><a href="cafe.html">Cà phê</a> </li>
+                <li class="hover"><a href="traa.html">Trà</a></li>
+                <li class="hover" class="xyz" style="position: relative;">
+                    Menu
+                    <ul class="sub_menu">
+                        <li class="sub_li">Tất cả
+                        </li> 
+                        <li class="sub_li">Cà Phê</li>
+                        <li class="sub_li">Trà</li>
+                        <li class="sub_li">Cloud</li>
+                        <li class="sub_li">Hi-Tea-Healthy</li>
+                        <li class="sub_li">Trà xanh sôcôla</li>
+                        <li class="sub_li">Thức uống đá xay</li>
+                        <li class="sub_li">Bánh & Snack</li>
+                    </ul>
+                </li>
+                <li class="hover"><a href="ytt.html">Yêu thích</a></li>
+                <li class="hover"><a href="CloudFee.html">CloudFee</a></li>
+                <li class="hover">Cửa hàng</li>
+                <li class="hover"><a href="giohang.html">Giỏ hàng</a></li>
+                <li id="Toggle" class="hover"></li>
+                <li id="tk" class="hover"></li>
+            </ul>
+
+
+
+        </div>
+        <img class="banner" style="width: 100%;"
+            src="https://file.hstatic.net/1000075078/file/chung_minh__web_moi__desktop_6fc4eeb6c24b419381de20b159b18723.jpg"
+            alt="">
+        <img class="banner" style="width: 100%;"
+            src="https://file.hstatic.net/1000075078/file/web_desktop_602aece503e446f5b1d7bc9adbf2e3a4.jpg" alt="">
+        <img class="banner" style="width: 100%;"
+            src="https://file.hstatic.net/1000075078/file/nhomvui_web_moi_desktop_dda86a0464364f93acf2bd4b2366e334.jpg"
+            alt="">
+
+        <script>
+            w3.slideshow(".banner",2000);
+        </script>
+        <div>
+            <ul style="display: flex; margin: 30px;">
+                <li class="a"><img style="border-radius: 5%;" alt="BROWN SUGAR" class=" abc"
+                        src="https://file.hstatic.net/1000075078/file/banner_app_2_c3dea7cad7cb4fad94f162ea6ccd388b.jpg"
+                        data-src="https://file.hstatic.net/1000075078/file/banner_app_copy_b65eedf05acb444490937926d98f4ae5.jpg">
+                </li>
+                <ul>
+                    <li class="a">
+                        <img class="style" style="border-radius: 5%;"
+                            src="https://product.hstatic.net/1000075078/product/1717388020_bo-pho-mai_34f5196f42b648e584aba3aecdaa2a87_large.jpg"
+                            alt="">
+                    </li>
+                    <li class="b"><b>Bơ Sữa Phô Mai Tươi</b>
+
+                    </li>
+                    <li style="color: gray;" class="b"><span> 49,000 đ</span> <button onclick="addToCart(this)"
+                        style="margin-left: 30px; cursor: pointer;">Thêm vào giỏ hàng</button><button style="margin: 3px;background-color: red;color: white;" onclick="addToYT(this)">YT</button></li>
+                </ul>
+                <ul>
+                    <li class="a">
+                        <img class="style" style="border-radius: 5%;"
+                            src="https://product.hstatic.net/1000075078/product/1717387639_dau-pho-mai_9689e15c727345fdbba97d2a0932fb4b_large.jpg"
+                            alt="">
+                    </li>
+                    <li class="b"><b>Dâu Phô Mai Tươi</b> </li>
+                    <li style="color: gray;" class="b"><span> 55,000 đ</span> <button onclick="addToCart(this)"
+                        style="margin-left: 30px; cursor: pointer;">Thêm vào giỏ hàng</button><button style="margin: 3px;background-color: red;color: white;" onclick="addToYT(this)">YT</button></li>
+                </ul>
+            </ul>
+            <ul style="display: flex; padding-left: 70px;">
+                <ul>
+                    <li class="a">
+                        <img class="style" style="border-radius: 5%;"
+                            src="https://product.hstatic.net/1000075078/product/1669736893_hi-tea-vai_a234999daa274575ade2c522c7a28eb5_large.png"
+                            alt="">
+                    </li>
+                    <li class="b"><b>Hi-Tea Vải</b> </li>
+                    <li style="color: gray;" class="b"><span> 49,000 đ</span> <button onclick="addToCart(this)"
+                        style="margin-left: 30px; cursor: pointer;">Thêm vào giỏ hàng</button><button style="margin: 3px;background-color: red;color: white;" onclick="addToYT(this)">YT</button></li>
+                </ul>
+                <ul>
+                    <li class="a">
+                        <img class="style" style="border-radius: 5%;"
+                            src="https://product.hstatic.net/1000075078/product/1669736835_ca-phe-sua-da_e6168b6a38ec45d2b4854d2708b5d542_large.png"
+                            alt="">
+                    </li>
+                    <li class="b"><b>Cà Phê Sữa Đá</b> </li>
+                    <li style="color: gray;" class="b"><span> 49,000 đ</span> <button onclick="addToCart(this)"
+                        style="margin-left: 30px; cursor: pointer;">Thêm vào giỏ hàng</button><button style="margin: 3px;background-color: red;color: white;" onclick="addToYT(this)">YT</button></li>
+                </ul>
+                <ul>
+                    <li class="a">
+                        <img class="style" style="border-radius: 5%;"
+                            src="https://product.hstatic.net/1000075078/product/1709023492_com-chien-hai-san_fe50106a79734d33afeb6e1319828ae9_large.jpg"
+                            alt="">
+                    </li>
+                    <li class="b"><b>Cơm Chiên Hải Sản</b> </li>
+                    <li style="color: gray;" class="b"><span> 29,000 đ</span> <button onclick="addToCart(this)"
+                        style="margin-left: 30px; cursor: pointer;">Thêm vào giỏ hàng</button><button style="margin: 3px;background-color: red;color: white;" onclick="addToYT(this)">YT</button></li>
+                </ul>
+                <ul>
+                    <li class="a">
+                        <img class="style" style="border-radius: 5%;" src="https://product.hstatic.net/1000075078/product/1655348107_mochi-choco_1aa57c325d154e2086cfa71a551713ee_large.jpg
+                            " alt="">
+                    </li>
+                    <li class="b"><b>Mochi Kem Chocolate</b> </li>
+                    <li style="color: gray;" class="b"><span> 19,000 đ</span> <button onclick="addToCart(this)"
+                        style="margin-left: 30px; cursor: pointer;">Thêm vào giỏ hàng</button><button style="margin: 3px;background-color: red;color: white;" onclick="addToYT(this)">YT</button></li>
+                </ul>
+            </ul>
+            <div style="display: flex; margin: 100px;">
+                <img style="width: 40%;"
+                    src="https://file.hstatic.net/1000075078/file/cloudtea_1_53e5d786b91c4f2e9d4ed651fb1ccc76.png"
+                    alt="CloudTea">
+                <div style="margin: 40px;">
+                    <img style="width: 100%; height: 50%;"
+                        src="https://file.hstatic.net/1000075078/file/tagline_2_0349b50fa884439da1e0f047b9a0851a.png"
+                        alt="">
+                    <p class="c">FROSTY là thức uống đá xay mát lạnh, sánh mịn, cuốn phần vị, hút phần nhìn, thỏa cảm
+                        xúc, mang lại cảm giác ĐÃAA TỨC THÌ cùng năng lượng tích cực cho bất cứ ai.</p>
+                    <a class="d" href="https://order.thecoffeehouse.com/12-12" target="_blank" title="Thử ngay">
+                        <span>Thử ngay</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div style="background-color: black;    padding-top: 34px;
+    padding-bottom: 54px;">
+        <p class="ct">Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN</p>
+        <p class="ct">Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014. Người đại diện: NGÔ
+            NGUYÊN KHA</p>
+        <p class="ct">Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh Điện thoại: (028) 7107 8079 Email:
+            hi@thecoffeehouse.vn</p>
+        <p class="ct">© 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu</p>
+    </div>
+
+    <script src="./practice.js"></script>
+</body>
+
+</html>
