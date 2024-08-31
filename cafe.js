@@ -28,7 +28,7 @@ function addToCart(e) {
       image: src,
       count: 1
   };
-
+ 
 
   var cart = JSON.parse(localStorage.getItem('dsSP')) || [];
   var itemIndex = cart.findIndex(item => item.name === name);
@@ -36,6 +36,7 @@ function addToCart(e) {
       cart[itemIndex].count += 1;
   } else {
       cart.push(obj);
+      alert("Da them vao gio hang");
   }
   localStorage.setItem('dsSP', JSON.stringify(cart));
 }
@@ -57,6 +58,7 @@ function addToYT(e) {
   var itemIndex = favorites.findIndex(item => item.name === name);
   if (itemIndex === -1) {
       favorites.push(favoriteItem);
+      alert("Da them vao phan yeu thich");
   }
 
   localStorage.setItem('favorites', JSON.stringify(favorites));
