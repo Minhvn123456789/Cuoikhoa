@@ -16,6 +16,7 @@ if (CurrUser) {
     var li = document.getElementById("Toggle")
     li.innerHTML = '<a href="login.html">Đăng Ký</a><a href="Đn.html">/Đăng nhập</a>'
 }
+
 function addToCart(e) {
   var name = e.parentNode.parentNode.children[1].innerText;
   var price = e.parentNode.children[0].innerText;
@@ -27,6 +28,7 @@ function addToCart(e) {
       image: src,
       count: 1
   };
+ 
 
   var cart = JSON.parse(localStorage.getItem('dsSP')) || [];
   var itemIndex = cart.findIndex(item => item.name === name);
@@ -34,10 +36,11 @@ function addToCart(e) {
       cart[itemIndex].count += 1;
   } else {
       cart.push(obj);
+      alert("Da them vao gio hang");
   }
   localStorage.setItem('dsSP', JSON.stringify(cart));
-  
 }
+
 function addToYT(e) {
   var name = e.parentNode.parentNode.children[1].innerText;
   var price = e.parentNode.children[0].innerText;
@@ -55,6 +58,7 @@ function addToYT(e) {
   var itemIndex = favorites.findIndex(item => item.name === name);
   if (itemIndex === -1) {
       favorites.push(favoriteItem);
+      alert("Da them vao phan yeu thich");
   }
 
   localStorage.setItem('favorites', JSON.stringify(favorites));
